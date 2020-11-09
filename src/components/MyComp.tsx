@@ -1,0 +1,44 @@
+import * as React from 'react';
+
+export type MyLibProps = {
+  value: string;
+  onChange: (value: string) => void;
+};
+
+export const MyComp: React.FC<MyLibProps> = (props) => {
+  const { value, onChange } = props;
+  return (
+    <div>
+      <div>my lib</div>
+      <input
+        aria-label="aaae"
+        value={value}
+        onChange={(e) => {
+          onChange(e.target.value);
+        }}
+      />
+    </div>
+  );
+};
+
+export const MyComp2: React.FC<MyLibProps> = (props) => {
+  const { value, onChange } = props;
+  return (
+    <div>
+      <div>트리쉐이킹 테스트my lib</div>
+      <input
+        aria-label="aaa"
+        value={value}
+        onChange={(e) => {
+          onChange(e.target.value);
+        }}
+      />
+    </div>
+  );
+};
+
+export const MyComp3: React.FC<MyLibProps> = (props) => {
+  const aa: string = props.value;
+  console.log(aa);
+  return <div>eqwewqewqeqw</div>;
+};

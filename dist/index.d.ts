@@ -1,1 +1,2 @@
-export declare function getPlural(str: any): string;
+export * from './components/MyComp';
+export declare type MyCompProps = import('./components/MyComp').MyLibProps;
