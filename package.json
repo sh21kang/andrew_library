@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bbonkr/bbon-formatter.git"
+    "url": "git+https://github.com/sh21kang/andrew_library.git"
   },
   "scripts": {
     "test": "mocha --reporter spec",
